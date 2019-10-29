@@ -6,7 +6,7 @@
 <html>
 <head>
   <link href='//fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
-  <title>iWorks: sign in!!!!</title>
+  <title>Welcome to iWorks</title>
 </head>
 <div class="container">
   <h2>
