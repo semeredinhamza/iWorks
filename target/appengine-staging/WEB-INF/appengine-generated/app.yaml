@@ -7,7 +7,7 @@ threadsafe: True
 auto_id_policy: default
 api_version: '1.0'
 handlers:
-- url: (/.*\.html)
+- url: (/.*)
   static_files: __static__\1
   upload: __NOT_USED__
   require_matching_file: True
