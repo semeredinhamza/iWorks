@@ -6,8 +6,8 @@
   <!-- JSPC servlet mappings start -->
 
     <servlet>
-        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentSignUp_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.employerTimeline_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -16,13 +16,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.employerTimeline_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentSignUp_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -40,9 +35,14 @@
         <servlet-class>org.apache.jsp.studentTimeline_jsp</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-        <url-pattern>/studentSignUp.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+        <url-pattern>/employerTimeline.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -51,13 +51,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-        <url-pattern>/employerTimeline.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+        <url-pattern>/studentSignUp.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -75,9 +70,22 @@
         <url-pattern>/studentTimeline.jsp</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+    </servlet-mapping>
+
 <!-- JSPC servlet mappings end -->
 
 <welcome-file-list>
     <welcome-file>loginPage.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+	<servlet-name>StudentSignUpServlet</servlet-name>
+	<servlet-class>iworks.StudentSignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StudentSignUpServlet</servlet-name>
+	<url-pattern>/StudentSignUpServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

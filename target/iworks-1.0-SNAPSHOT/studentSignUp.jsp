@@ -25,7 +25,7 @@
                     <br>
                 </div>
 
-                <form method="POST" action="/signUpStudent">
+                <form method="POST" action="StudentSignUpServlet">
                     <div class="form-group">
                         <label for="first name"> First Name  </label>
                         <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="emailHelp" placeholder="ex: John">

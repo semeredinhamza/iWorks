@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-@WebServlet(name = "StudentSignUp", value = "/signUpStudent")
+@WebServlet(name = "StudentSignUpServlet", value = "/StudentSignUpServlet")
 public class StudentSignUpServlet extends HttpServlet {
 
   @Override

@@ -55,8 +55,8 @@
   
   
   <servlet>
-    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.studentSignUp_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.employerTimeline_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
@@ -65,80 +65,80 @@
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.employerTimeline_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
-    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.studentSignUp_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.index_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.index_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.EmployerRegister_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.EmployerRegister_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.studentTimeline_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.studentTimeline_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>StudentSignUpServlet</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):13">iworks.StudentSignUpServlet</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>HelloAppEngine</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.HelloAppEngine):13">iworks.HelloAppEngine</servlet-class>
-    <async-supported origin="@WebServlet(iworks.HelloAppEngine):14">false</async-supported>
-  </servlet>
-  <servlet>
-    <servlet-name>StudentSignUp</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.StudentSignUpServlet):15">iworks.StudentSignUpServlet</servlet-class>
-    <async-supported origin="@WebServlet(iworks.StudentSignUpServlet):16">false</async-supported>
+    <servlet-class origin="@WebServlet(iworks.HelloAppEngine):14">iworks.HelloAppEngine</servlet-class>
+    <async-supported origin="@WebServlet(iworks.HelloAppEngine):15">false</async-supported>
   </servlet>
   
   
   
   
   
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):22">
-    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-    <url-pattern>/studentSignUp.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):23">
-    <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
-    <url-pattern>/loginPage.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):24">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):21">
     <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
     <url-pattern>/employerTimeline.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):25">
-    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-    <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):22">
+    <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
+    <url-pattern>/loginPage.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):26">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):23">
+    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+    <url-pattern>/studentSignUp.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):24">
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
     <url-pattern>/index.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):27">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):25">
     <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
     <url-pattern>/EmployerRegister.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):28">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):26">
     <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
     <url-pattern>/studentTimeline.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):27">
+    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+    <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):28">
+    <servlet-name>StudentSignUpServlet</servlet-name>
+    <url-pattern>/StudentSignUpServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>HelloAppEngine</servlet-name>
     <url-pattern>/sign_in</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>StudentSignUp</servlet-name>
-    <url-pattern>/signUpStudent</url-pattern>
   </servlet-mapping>
   <security-role>
     <role-name>admin</role-name>
