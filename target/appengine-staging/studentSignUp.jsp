@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="iworks.StudentSignUpServlet" %>
 
 <html lang="en">
 
@@ -23,42 +25,42 @@
                     <br>
                 </div>
 
-                <form>
+                <form method="POST" action="/signUpStudent">
                     <div class="form-group">
                         <label for="first name"> First Name  </label>
-                        <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="ex: John">
+                        <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="emailHelp" placeholder="ex: John">
                     </div>
 
                     <div class="form-group">
                         <label for="last Name"> Last Name </label>
-                        <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="ex: Smith">
+                        <input type="text" class="form-control" name="lastName" id="lastName" aria-describedby="emailHelp" placeholder="ex: Smith">
                     </div>
 
                     <div class="form-group">
                         <label for="age"> Age </label>
-                        <input type="text" class="form-control" id="age" aria-describedby="emailHelp" placeholder="ex: 15">
+                        <input type="text" class="form-control" name="age" id="age" aria-describedby="emailHelp" placeholder="ex: 15">
                     </div>
 
 
                     <div class="form-group">
                         <label for="school"> School </label>
-                        <input type="email" class="form-control" id="school" aria-describedby="emailHelp" placeholder="High School">
+                        <input type="email" class="form-control" name="school" id="school" aria-describedby="emailHelp" placeholder="High School">
                     </div>
 
                     <div class="form-group">
                         <label for="student grade"> Grade </label>
-                        <input type="text" class="form-control" id="grade" placeholder="ex: 11">
+                        <input type="text" class="form-control" name="grade" id="grade" placeholder="ex: 11">
                     </div>
 
                     <div class="form-group">
                         <label for="emailInput"> Email address </label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnSmith@iWorks.com">
+                        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnSmith@iWorks.com">
                     </div>
 
 
                     <div class="form-group">
                         <label for="Password Input"> Password </label>
-                        <input type="password" class="form-control" id="passInput" placeholder="Password">
+                        <input type="password" class="form-control" name="passInput" id="passInput" placeholder="Password">
                     </div>
 
                     <div class="form-group">
@@ -67,7 +69,7 @@
                     </div>
 
                     <div class="">
-                        <a role="button" class="btn btn-outline-primary" href="loginPage.jsp">Sign Up</a>
+                        <a role="button" type="submit" class="btn btn-outline-primary">Sign Up</a>
                     </div>
                     <br>
 

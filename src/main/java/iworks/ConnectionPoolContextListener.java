@@ -1,3 +1,5 @@
+package iworks;
+
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Connection;
@@ -11,8 +13,6 @@ import javax.sql.DataSource;
 
 @WebListener("Creates a connection pool that is stored in the Servlet's context for later use.")
 public class ConnectionPoolContextListener implements ServletContextListener {
-
-  private static final Logger LOGGER = Logger.getLogger(IndexServlet.class.getName());
 
   private static final String CLOUD_SQL_CONNECTION_NAME = "iworks:us-east4:iworks-db";
   private static final String DB_USER = "root";
@@ -28,6 +28,7 @@ public class ConnectionPoolContextListener implements ServletContextListener {
     config.setJdbcUrl(String.format("jdbc:mysql:///%s", DB_NAME));
     config.setUsername(DB_USER); 
     config.setPassword(DB_PASS); 
+	//config.setDriverClassName("com.mysql.jdbc.Driver");
 
     config.addDataSourceProperty("socketFactory", "com.google.cloud.sql.mysql.SocketFactory");
     config.addDataSourceProperty("cloudSqlInstance", CLOUD_SQL_CONNECTION_NAME);
@@ -70,7 +71,7 @@ public class ConnectionPoolContextListener implements ServletContextListener {
       PreparedStatement createTableStatement = conn.prepareStatement(
           "CREATE TABLE IF NOT EXISTS students ( "
               + "user_name VARCHAR(30) PRIMARY KEY, password VARCHAR(30) NOT NULL, first_name VARCHAR(30) NOT NULL, last_name VARCHAR(30) NOT NULL,"
-              + " age INT NOY NULL, school VARCHAR(30) NOT NULL, grade INT NOT NULL);"
+              + " age VARCHAR(30) NOT NULL, school VARCHAR(30) NOT NULL, grade VARCHAR(30) NOT NULL);"
       );
       createTableStatement.execute();
     }

@@ -6,8 +6,8 @@
   <!-- JSPC servlet mappings start -->
 
     <servlet>
-        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.employerTimeline_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentSignUp_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -16,13 +16,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentSignUp_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.EmployerRegister_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.employerTimeline_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -31,18 +26,23 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimeline_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <servlet-class>org.apache.jsp.index_jsp</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.EmployerRegister_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimeline_jsp</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-        <url-pattern>/employerTimeline.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+        <url-pattern>/studentSignUp.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -51,13 +51,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-        <url-pattern>/studentSignUp.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-        <url-pattern>/EmployerRegister.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+        <url-pattern>/employerTimeline.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -66,13 +61,18 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-        <url-pattern>/studentTimeline.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-        <url-pattern>/index.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+        <url-pattern>/EmployerRegister.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
+        <url-pattern>/studentTimeline.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->
