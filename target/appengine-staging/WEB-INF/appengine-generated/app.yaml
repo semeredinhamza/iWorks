@@ -29,11 +29,19 @@ handlers:
   script: unused
   login: optional
   secure: optional
-- url: /sign_in
+- url: /programs
   script: unused
   login: optional
   secure: optional
-- url: /StudentSignUpServlet
+- url: /jobs
+  script: unused
+  login: optional
+  secure: optional
+- url: /create
+  script: unused
+  login: optional
+  secure: optional
+- url: /sign_in
   script: unused
   login: optional
   secure: optional

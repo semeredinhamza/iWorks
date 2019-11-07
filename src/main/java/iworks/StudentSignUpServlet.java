@@ -18,8 +18,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-@WebServlet(name = "StudentSignUpServlet", value = "/StudentSignUpServlet")
+@WebServlet(name = "StudentSignUpServlet", value = "/create")
 public class StudentSignUpServlet extends HttpServlet {
+  private static final Logger log = Logger.getLogger(StudentSignUpServlet.class.getName());
 
   @Override
   public void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -59,13 +60,14 @@ public class StudentSignUpServlet extends HttpServlet {
       // If something goes wrong, handle the error in this section. 
       resp.setStatus(500);
       resp.getWriter().write("Unable to successfully sign up!");
-	  System.out.println("Unable to successfully sign up!");
+	  log.info("Unable to successfully sign up!");
     }
     // [END cloud_sql_mysql_servlet_connection]
 
     resp.setStatus(200);
-    resp.getWriter().printf("Successfully signed up!");
-	System.out.println("Successfully signed up!");
+	resp.sendRedirect("loginPage.jsp");
+    //resp.getWriter().printf("Successfully signed up!");
+	log.info("Successfully signed up!");
   }
 
 }

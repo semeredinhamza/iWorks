@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html lang="en">
 
 <head>
-    <title>iWork LogIn</title>
+    <title>iWorks LogIn</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +17,7 @@
         <div class="container-login">
             <div class="jumbotron">
                 <div class="">
-                    <h1>Welcome to iWork</h1>
+                    <h1>Welcome to iWorks</h1>
                 </div>
 
                 <form>
@@ -29,14 +30,15 @@
                         <input type="password" class="form-control" id="passInput" placeholder="Password">
                     </div>
                     <div class="">
-                        <button type="button" class="btn btn-outline-primary">Login</button>
+						<!-- <button type="submit" class="btn btn-outline-primary" href="studentTimelinePrograms.jsp">Login</button> -->
+                        <a id= "login" type="button" class="btn btn-outline-primary" href="https://iworks.appspot.com/programs">Login</a>
                     </div>
                     <br>
                 </form>
 
 
                 <div class="">
-                    New to iWork?
+                    New to iWorks?
                     <a class="txt2" href="studentSignUp.jsp">
                                 Create Your Account
                                 <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
@@ -50,6 +52,7 @@
     <script src="../vendor/jquery/jquery.min.js"></script>
     <!-- <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://www.google.com/jsapi"></script>
+	
 
 </body>
 

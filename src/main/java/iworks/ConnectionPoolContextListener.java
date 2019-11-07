@@ -18,6 +18,7 @@ public class ConnectionPoolContextListener implements ServletContextListener {
   private static final String DB_USER = "root";
   private static final String DB_PASS = "iworks#5";
   private static final String DB_NAME = "iworks_db";
+  private static final Logger log = Logger.getLogger(StudentSignUpServlet.class.getName());
 
   private DataSource createConnectionPool() {
     // [START cloud_sql_mysql_servlet_create]
@@ -65,15 +66,31 @@ public class ConnectionPoolContextListener implements ServletContextListener {
     return pool;
   }
 
-  private void createTable(DataSource pool) throws SQLException {
+  private void createTables(DataSource pool) throws SQLException {
     // Safely attempt to create the table schema.
     try (Connection conn = pool.getConnection()) {
-      PreparedStatement createTableStatement = conn.prepareStatement(
+      PreparedStatement createStudentsTableStatement = conn.prepareStatement(
           "CREATE TABLE IF NOT EXISTS students ( "
               + "user_name VARCHAR(30) PRIMARY KEY, password VARCHAR(30) NOT NULL, first_name VARCHAR(30) NOT NULL, last_name VARCHAR(30) NOT NULL,"
               + " age VARCHAR(30) NOT NULL, school VARCHAR(30) NOT NULL, grade VARCHAR(30) NOT NULL);"
       );
-      createTableStatement.execute();
+      createStudentsTableStatement.execute();
+	  
+	  PreparedStatement createJobsTableStatement = conn.prepareStatement(
+          "CREATE TABLE IF NOT EXISTS jobs ( "
+              + "job_id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(200) NOT NULL, institution VARCHAR(100) NOT NULL, period VARCHAR(100) NOT NULL, location VARCHAR(100) NOT NULL,"
+              + " description VARCHAR(500) NOT NULL, link VARCHAR(200) NOT NULL);"
+      );
+      createJobsTableStatement.execute();
+	  
+	  PreparedStatement createProgramsTableStatement = conn.prepareStatement(
+          "CREATE TABLE IF NOT EXISTS programs ( "
+              + "program_id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(200) NOT NULL, institution VARCHAR(100) NOT NULL, period VARCHAR(100) NOT NULL, location VARCHAR(100) NOT NULL,"
+              + " description VARCHAR(500) NOT NULL, link VARCHAR(200) NOT NULL);"
+      );
+      createProgramsTableStatement.execute();
+	  
+	  log.info("Successfully created tables!");
     }
   }
 
@@ -96,7 +113,7 @@ public class ConnectionPoolContextListener implements ServletContextListener {
       event.getServletContext().setAttribute("my-pool", pool);
     }
     try {
-      createTable(pool);
+      createTables(pool);
     } catch (SQLException ex) {
       throw new RuntimeException("Unable to verify table schema. Please double check the steps try again.", ex);
     }

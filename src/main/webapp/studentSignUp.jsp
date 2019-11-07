@@ -25,7 +25,7 @@
                     <br>
                 </div>
 
-                <form method="POST" action="StudentSignUpServlet">
+                <form method="POST" action="/create">
                     <div class="form-group">
                         <label for="first name"> First Name  </label>
                         <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="emailHelp" placeholder="ex: John">
@@ -44,7 +44,7 @@
 
                     <div class="form-group">
                         <label for="school"> School </label>
-                        <input type="email" class="form-control" name="school" id="school" aria-describedby="emailHelp" placeholder="High School">
+                        <input type="text" class="form-control" name="school" id="school" aria-describedby="emailHelp" placeholder="High School">
                     </div>
 
                     <div class="form-group">
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="">
-                        <a role="button" type="submit" class="btn btn-outline-primary">Sign Up</a>
+						<button type="submit" class="btn btn-outline-primary" href="loginPage.jsp">Sign Up</button>
                     </div>
                     <br>
 
