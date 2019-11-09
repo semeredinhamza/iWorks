@@ -53,6 +53,7 @@ public class StudentTimelineJobsServlet extends HttpServlet {
 
     // Add variables and render the page
     req.setAttribute("jobs", jobs);
+	resp.getWriter().println("Jobs fetched successfully!");
     req.getRequestDispatcher("/studentTimelineJobs.jsp").forward(req, resp);
   }
 }
