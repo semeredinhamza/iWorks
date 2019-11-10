@@ -1,17 +1,13 @@
-appengine-skeleton
+ Welcome to iWorks!
 ==================
 
-This is a generated application from the appengine-skeleton archetype.
+This is a Java Google App Engine application.
 
-See the [Google App Engine standard environment documentation][ae-docs] for more
-detailed instructions.
+Tecnologies used include: Java, JSP, CSS, Google App Engine, Maven, and Google Cloud SQL.
 
-[ae-docs]: https://cloud.google.com/appengine/docs/java/
-
-
-* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Maven](https://maven.apache.org/download.cgi) (at least 3.5)
-* [Google Cloud SDK](https://cloud.google.com/sdk/) (aka gcloud)
+The Java source code is located in: src/main/java/iworks/
+The front-end files are located in: src/main/webapp/
+The test files are located in: src/test/java/iworks/
 
 ## Setup
 
@@ -39,17 +35,3 @@ to (`src/main/test/...`).  The following resources are quite useful:
 * [Mockito](http://mockito.org/)
 * [Truth](http://google.github.io/truth/)
 
-## Updating to latest Artifacts
-
-An easy way to keep your projects up to date is to use the maven [Versions plugin][versions-plugin].
-
-    mvn versions:display-plugin-updates
-    mvn versions:display-dependency-updates
-    mvn versions:use-latest-versions
-
-Note - Be careful when changing `javax.servlet` as App Engine Standard uses 3.1 for Java 8, and 2.5
-for Java 7.
-
-Our usual process is to test, update the versions, then test again before committing back.
-
-[plugin]: http://www.mojohaus.org/versions-maven-plugin/
