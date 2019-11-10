@@ -53,6 +53,8 @@ public class StudentTimelineProgramsServlet extends HttpServlet {
 
     // Add variables and render the page
     req.setAttribute("programs", programs);
+	resp.setContentType("text/plain");
+	resp.getWriter().println("Programs fetched successfully!");
     req.getRequestDispatcher("/studentTimelinePrograms.jsp").forward(req, resp);
   }
 }
