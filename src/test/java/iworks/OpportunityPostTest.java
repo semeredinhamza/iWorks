@@ -78,11 +78,38 @@ public class OpportunityPostTest {
         .contains("getInstitution received");
   }
   
+ public void getPeriodWritesResponse() throws Exception {
+    servletUnderTest.getPeriod();
+    
+    assertThat(responseWriter.toString())
+        .named("getPeriod received response")
+        .contains("getPeriod received");
+  }
   
   
+public void getLocationWritesResponse() throws Exception {
+    servletUnderTest.getLocation();
+    
+    assertThat(responseWriter.toString())
+        .named("getLocation received response")
+        .contains("getLocation received");
+  } 
   
-  
-  
+public void getDescriptionWritesResponse() throws Exception {
+    servletUnderTest.getDescription();
+    
+    assertThat(responseWriter.toString())
+        .named("getDescription received response")
+        .contains("getDescription received");
+  } 
+   
+public void getLinkWritesResponse() throws Exception {
+    servletUnderTest.getLink();
+    
+    assertThat(responseWriter.toString())
+        .named("getLink received response")
+        .contains("getLink received");
+  } 
   
   
 }
