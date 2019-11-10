@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  
 @RunWith(JUnit4.class)
 public class OpportunityPostTest {
-  private static final String FAKE_URL = "fake.fk/hello";
+  private static final String FAKE_String = "Test string";
   // Set up a helper so that the ApiProxy returns a valid environment for local testing.
   private final LocalServiceTestHelper helper = new LocalServiceTestHelper();
 
@@ -48,6 +48,12 @@ public class OpportunityPostTest {
     when(mockResponse.getWriter()).thenReturn(new PrintWriter(responseWriter));
 
     servletUnderTest = new OpportunityPost();
+    private static final String FAKE_String = "Test string";
+    private static final String FAKE_String = "Test string";
+    private static final String FAKE_String = "Test string";
+    private static final String FAKE_String = "Test string";
+    private static final String FAKE_String = "Test string";
+    private static final String FAKE_String = "Test string";
   }
 
   @After public void tearDown() {
@@ -55,8 +61,9 @@ public class OpportunityPostTest {
   }
 
   @Test
+  
   public void getTitletWritesResponse() throws Exception {
-    servletUnderTest.getTitle(mockRequest, mockResponse);
+    servletUnderTest.getTitle();
 
     assertThat(responseWriter.toString())
         .named("getTitle received response")
@@ -64,12 +71,13 @@ public class OpportunityPostTest {
   }
   
   public void getInstitutionWritesResponse() throws Exception {
-    servletUnderTest.getInstitution(mockRequest, mockResponse);
+    servletUnderTest.getInstitution();
     
     assertThat(responseWriter.toString())
         .named("getInstitution received response")
-        .contains("getInstitution revieved");
+        .contains("getInstitution received");
   }
+  
   
   
   
