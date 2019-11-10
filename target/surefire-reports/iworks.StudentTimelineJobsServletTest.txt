@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: iworks.StudentTimelineJobsServletTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.428 s <<< FAILURE! - in iworks.StudentTimelineJobsServletTest
-doGetWritesResponse(iworks.StudentTimelineJobsServletTest)  Time elapsed: 0.396 s  <<< ERROR!
-java.lang.NullPointerException
-	at iworks.StudentTimelineJobsServletTest.doGetWritesResponse(StudentTimelineJobsServletTest.java:68)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.491 s - in iworks.StudentTimelineJobsServletTest

@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * Unit tests for {@link StudentTimelineProgramsServlet}.
  */
 @RunWith(JUnit4.class)
-public class StudentTimelineJobsServletTest {
+public class StudentTimelineProgramsServletTest {
   private static final String FAKE_URL = "fake.fk/hello";
   // Set up a helper so that the ApiProxy returns a valid environment for local testing.
   private final LocalServiceTestHelper helper = new LocalServiceTestHelper();

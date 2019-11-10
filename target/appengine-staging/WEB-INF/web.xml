@@ -21,8 +21,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -31,18 +31,18 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.EmployerRegister_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
         <servlet-class>org.apache.jsp.studentTimelineJobs_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.EmployerRegister_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -66,8 +66,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
-        <url-pattern>/studentTimelinePrograms.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -76,18 +76,18 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+        <url-pattern>/EmployerRegister.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
+        <url-pattern>/studentTimelinePrograms.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
         <url-pattern>/studentTimelineJobs.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-        <url-pattern>/EmployerRegister.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
