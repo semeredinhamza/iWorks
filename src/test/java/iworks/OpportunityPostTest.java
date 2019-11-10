@@ -55,11 +55,26 @@ public class OpportunityPostTest {
   }
 
   @Test
-  public void doGetWritesResponse() throws Exception {
-    servletUnderTest.doGet(mockRequest, mockResponse);
+  public void getTitletWritesResponse() throws Exception {
+    servletUnderTest.getTitle(mockRequest, mockResponse);
 
     assertThat(responseWriter.toString())
-        .named("OpportunityPost response")
-        .contains("Opportunity posted successfully!");
+        .named("getTitle received response")
+        .contains("getTitle received");
   }
+  
+  public void getInstitutionWritesResponse() throws Exception {
+    servletUnderTest.getInstitution(mockRequest, mockResponse);
+    
+    assertThat(responseWriter.toString())
+        .named("getInstitution received response")
+        .contains("getInstitution revieved");
+  }
+  
+  
+  
+  
+  
+  
+  
 }
