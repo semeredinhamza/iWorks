@@ -6,7 +6,9 @@ This is a Java Google App Engine application.
 Tecnologies used include: Java, JSP, CSS, Google App Engine, Maven, and Google Cloud SQL.
 
 The Java source code is located in: src/main/java/iworks/
+
 The front-end files are located in: src/main/webapp/
+
 The test files are located in: src/test/java/iworks/
 
 ## Setup
