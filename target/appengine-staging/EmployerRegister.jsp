@@ -27,31 +27,31 @@
                     <br>
                 </div>
 
-                <form>
+                <form method="POST" action="/register">
                     <div class="form-group">
                         <label for="Company Name"> Company Name  </label>
-                        <input type="text" class="form-control" id="companyName" aria-describedby="companyName" placeholder="ex: Google">
+                        <input type="text" class="form-control" name="companyName" id="companyName" aria-describedby="companyName" placeholder="ex: Google">
                     </div>
 
                     <div class="form-group">
                         <label for="Industry"> Industry </label>
-                        <input type="text" class="form-control" id="industry" aria-describedby="industry" placeholder="ex: Technology">
+                        <input type="text" class="form-control" name="industry" id="industry" aria-describedby="industry" placeholder="ex: Technology">
                     </div>
 
                     <div class="form-group">
-                        <label for="school"> location </label>
-                        <input type="email" class="form-control" id="school" aria-describedby="location" placeholder="ex: Atlanta, Georgia">
+                        <label for="school"> Location </label>
+                        <input type="text" class="form-control" name="location" id="location" aria-describedby="location" placeholder="ex: Atlanta, Georgia">
                     </div>
 
                     <div class="form-group">
                         <label for="emailInput"> Email address </label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnW@iworks.com">
+                        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnW@iworks.com">
                     </div>
 
 
                     <div class="form-group">
                         <label for="Password Input"> Password </label>
-                        <input type="password" class="form-control" id="passInput" placeholder="Password">
+                        <input type="password" class="form-control" name="passInput" id="passInput" placeholder="Password">
                     </div>
 
                     <div class="form-group">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="">
-                        <a role="button" class="btn btn-outline-primary" href="loginPage.jsp">Sign Up</a>
+                        <button type="submit" class="btn btn-outline-primary" href="loginPage.jsp">Sign Up</button>
                     </div>
                     <br>
 

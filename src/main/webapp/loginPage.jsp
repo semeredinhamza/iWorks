@@ -20,22 +20,23 @@
                     <h1>Welcome to iWorks</h1>
                 </div>
 
-                <form method="GET" action="/programs">
+                <form method="POST" action="/login">
                     <div class="form-group">
                         <label for="emailInput"> Email address </label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnW@iworks.com" required="required">
+                        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnW@iworks.com" required="required">
                     </div>
                     <div class="form-group">
                         <label for="Password Input" > Password </label>
-                        <input type="password" class="form-control" id="passInput" placeholder="Password" required="required">
+                        <input type="password" class="form-control" name="passInput" id="passInput" placeholder="Password" required="required">
                     </div>
+
                     <div class="">
 						<button type="submit" class="btn btn-outline-primary">Login</button>
                         <!-- <a id= "login" type="button" class="btn btn-outline-primary" href="https://iworks.appspot.com/programs">Login</a> -->
                     </div>
+
                     <br>
                 </form>
-
 
                 <div class="">
                     New to iWorks?

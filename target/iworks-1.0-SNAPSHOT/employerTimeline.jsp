@@ -11,7 +11,11 @@
 </head>
 
 <body>
+        <nav class="navbar navbar-light bg-light navbar-right">
 
+                <a role="button" class="btn btn-outline-primary my-2 my-sm-2" href="loginPage.jsp" style="margin-left:1400px;">Logout</a>
+        
+            </nav>
     <div class="limiter">
         <div class="container-login"   >
             <div class="jumbotron">
@@ -26,7 +30,13 @@
                         <label for="Listing Title"> Title </label>
                         <input type="text" class="form-control" id="title" aria-describedby="" placeholder="">
                     </div>
-
+                    <div class="form-group">
+                        <label for="typeExp">Type of Experience</label>
+                        <select class="form-control" id="expOptions">
+                            <option value="Intership">Intership</option>
+                            <option value="Learing">Learing Oppourtunity </option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="Company/Institution name"> Company / Institution </label>
                         <input type="text" class="form-control" id="name" aria-describedby="" placeholder="">

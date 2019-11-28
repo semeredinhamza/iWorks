@@ -75,6 +75,13 @@ public class ConnectionPoolContextListener implements ServletContextListener {
               + " age VARCHAR(30) NOT NULL, school VARCHAR(30) NOT NULL, grade VARCHAR(30) NOT NULL);"
       );
       createStudentsTableStatement.execute();
+
+      PreparedStatement createEmployersTableStatement = conn.prepareStatement(
+          "CREATE TABLE IF NOT EXISTS employers ( "
+              + "user_name VARCHAR(30) PRIMARY KEY, password VARCHAR(30) NOT NULL, company_name VARCHAR(30) NOT NULL, industry VARCHAR(30) NOT NULL,"
+              + " location VARCHAR(30) NOT NULL);"
+      );
+      createEmployersTableStatement.execute();
 	  
 	  PreparedStatement createJobsTableStatement = conn.prepareStatement(
           "CREATE TABLE IF NOT EXISTS jobs ( "

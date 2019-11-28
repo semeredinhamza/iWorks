@@ -55,13 +55,13 @@
   
   
   <servlet>
-    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.employerTimeline_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):6">org.apache.jsp.studentSignUp_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.studentSignUp_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):7">org.apache.jsp.employerTimeline_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
@@ -70,99 +70,117 @@
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.index_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.index_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
-    <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.EmployerRegister_jsp</servlet-class>
+    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
-    <async-supported>false</async-supported>
-  </servlet>
-  <servlet>
-    <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.studentTimelineJobs_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.studentTimeline_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.studentTimeline_jsp</servlet-class>
     <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.EmployerRegister_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.studentTimelineJobs_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>EmployerRegisterServlet</servlet-name>
+    <servlet-class origin="@WebServlet(iworks.EmployerRegisterServlet):15">iworks.EmployerRegisterServlet</servlet-class>
+    <async-supported origin="@WebServlet(iworks.EmployerRegisterServlet):16">false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>HelloAppEngine</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.HelloAppEngine):15">iworks.HelloAppEngine</servlet-class>
-    <async-supported origin="@WebServlet(iworks.HelloAppEngine):16">false</async-supported>
+    <servlet-class origin="@WebServlet(iworks.HelloAppEngine):17">iworks.HelloAppEngine</servlet-class>
+    <async-supported origin="@WebServlet(iworks.HelloAppEngine):18">false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class origin="@WebServlet(iworks.LoginServlet):19">iworks.LoginServlet</servlet-class>
+    <async-supported origin="@WebServlet(iworks.LoginServlet):20">false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>StudentSignUpServlet</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.StudentSignUpServlet):17">iworks.StudentSignUpServlet</servlet-class>
-    <async-supported origin="@WebServlet(iworks.StudentSignUpServlet):18">false</async-supported>
+    <servlet-class origin="@WebServlet(iworks.StudentSignUpServlet):21">iworks.StudentSignUpServlet</servlet-class>
+    <async-supported origin="@WebServlet(iworks.StudentSignUpServlet):22">false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>StudentTimelineJobsServlet</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.StudentTimelineJobsServlet):19">iworks.StudentTimelineJobsServlet</servlet-class>
-    <async-supported origin="@WebServlet(iworks.StudentTimelineJobsServlet):20">false</async-supported>
+    <servlet-class origin="@WebServlet(iworks.StudentTimelineJobsServlet):23">iworks.StudentTimelineJobsServlet</servlet-class>
+    <async-supported origin="@WebServlet(iworks.StudentTimelineJobsServlet):24">false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>StudentTimelineProgramsServlet</servlet-name>
-    <servlet-class origin="@WebServlet(iworks.StudentTimelineProgramsServlet):21">iworks.StudentTimelineProgramsServlet</servlet-class>
-    <async-supported origin="@WebServlet(iworks.StudentTimelineProgramsServlet):22">false</async-supported>
+    <servlet-class origin="@WebServlet(iworks.StudentTimelineProgramsServlet):25">iworks.StudentTimelineProgramsServlet</servlet-class>
+    <async-supported origin="@WebServlet(iworks.StudentTimelineProgramsServlet):26">false</async-supported>
   </servlet>
   
   
   
   
   
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):28">
-    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
-    <url-pattern>/employerTimeline.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):29">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):32">
     <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
     <url-pattern>/studentSignUp.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):30">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):33">
+    <servlet-name>org.apache.jsp.employerTimeline_jsp</servlet-name>
+    <url-pattern>/employerTimeline.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):34">
     <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
     <url-pattern>/loginPage.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):31">
-    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-    <url-pattern>/studentTimelineLearning.jsp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):32">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):35">
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
     <url-pattern>/index.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):33">
-    <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
-    <url-pattern>/EmployerRegister.jsp</url-pattern>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):36">
+    <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+    <url-pattern>/studentTimelineLearning.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):34">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):37">
     <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
     <url-pattern>/studentTimelinePrograms.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):35">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):38">
+    <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
+    <url-pattern>/studentTimeline.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):39">
+    <servlet-name>org.apache.jsp.EmployerRegister_jsp</servlet-name>
+    <url-pattern>/EmployerRegister.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):40">
     <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
     <url-pattern>/studentTimelineJobs.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Semeredin/IdeaProjects/SWE_Project/iWorks/target/appengine-staging/WEB-INF/web.xml):36">
-    <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-    <url-pattern>/studentTimeline.jsp</url-pattern>
+  <servlet-mapping>
+    <servlet-name>EmployerRegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>HelloAppEngine</servlet-name>
     <url-pattern>/sign_in</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>StudentSignUpServlet</servlet-name>
@@ -186,159 +204,159 @@
     <welcome-file>loginPage.jsp</welcome-file>
   </welcome-file-list>
   <locale-encoding-mapping-list>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):40">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):44">
       <locale>de</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):41">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):45">
       <locale>no</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):42">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):46">
       <locale>be</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):43">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):47">
       <locale>fi</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):44">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):48">
       <locale>ru</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):45">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):49">
       <locale>pt</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):46">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):50">
       <locale>bg</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):47">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):51">
       <locale>lt</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):48">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):52">
       <locale>hr</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):49">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):53">
       <locale>lv</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):50">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):54">
       <locale>fr</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):51">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):55">
       <locale>hu</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):52">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):56">
       <locale>zh_TW</locale>
       <encoding>Big5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):53">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):57">
       <locale>sh</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):54">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):58">
       <locale>uk</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):55">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):59">
       <locale>sk</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):56">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):60">
       <locale>sl</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):57">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):61">
       <locale>ca</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):58">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):62">
       <locale>mk</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):59">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):63">
       <locale>sq</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):60">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):64">
       <locale>sr</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):61">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):65">
       <locale>sv</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):62">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):66">
       <locale>ko</locale>
       <encoding>EUC-KR</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):63">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):67">
       <locale>el</locale>
       <encoding>ISO-8859-7</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):64">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):68">
       <locale>en</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):65">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):69">
       <locale>is</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):66">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):70">
       <locale>it</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):67">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):71">
       <locale>es</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):68">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):72">
       <locale>iw</locale>
       <encoding>ISO-8859-8</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):69">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):73">
       <locale>zh</locale>
       <encoding>GB2312</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):70">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):74">
       <locale>et</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):71">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):75">
       <locale>cs</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):72">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):76">
       <locale>ar</locale>
       <encoding>ISO-8859-6</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):73">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):77">
       <locale>ja</locale>
       <encoding>Shift_JIS</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):74">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):78">
       <locale>pl</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):75">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):79">
       <locale>da</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):76">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):80">
       <locale>ro</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):77">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):81">
       <locale>nl</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):78">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Semeredin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):82">
       <locale>tr</locale>
       <encoding>ISO-8859-9</encoding>
     </locale-encoding-mapping>
