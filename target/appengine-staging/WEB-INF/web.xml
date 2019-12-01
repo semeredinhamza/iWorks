@@ -6,6 +6,11 @@
   <!-- JSPC servlet mappings start -->
 
     <servlet>
+        <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.loginPage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
         <servlet-class>org.apache.jsp.studentSignUp_jsp</servlet-class>
     </servlet>
@@ -16,28 +21,8 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.loginPage_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <servlet-class>org.apache.jsp.index_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.studentTimeline_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -46,9 +31,29 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimelineLearning_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimeline_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
         <servlet-class>org.apache.jsp.studentTimelineJobs_jsp</servlet-class>
     </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.studentTimelinePrograms_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
+        <url-pattern>/loginPage.jsp</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.studentSignUp_jsp</servlet-name>
@@ -61,28 +66,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.loginPage_jsp</servlet-name>
-        <url-pattern>/loginPage.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.index_jsp</servlet-name>
         <url-pattern>/index.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
-        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
-        <url-pattern>/studentTimelinePrograms.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
-        <url-pattern>/studentTimeline.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -91,8 +76,23 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimelineLearning_jsp</servlet-name>
+        <url-pattern>/studentTimelineLearning.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimeline_jsp</servlet-name>
+        <url-pattern>/studentTimeline.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.studentTimelineJobs_jsp</servlet-name>
         <url-pattern>/studentTimelineJobs.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.studentTimelinePrograms_jsp</servlet-name>
+        <url-pattern>/studentTimelinePrograms.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->

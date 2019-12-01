@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 @WebServlet(name = "EmployerRegisterServlet", value = "/register")
 public class EmployerRegisterServlet extends HttpServlet {
-  private static final Logger log = Logger.getLogger(StudentSignUpServlet.class.getName());
+  private static final Logger log = Logger.getLogger(EmployerRegisterServlet.class.getName());
 
   @Override
   public void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -61,7 +61,6 @@ public class EmployerRegisterServlet extends HttpServlet {
 
     resp.setStatus(200);
 	resp.sendRedirect("loginPage.jsp");
-    //resp.getWriter().printf("Successfully signed up!");
 	log.info("Successfully signed up!");
   }
 

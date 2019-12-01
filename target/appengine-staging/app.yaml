@@ -49,6 +49,10 @@ handlers:
   script: unused
   login: optional
   secure: optional
+- url: /post
+  script: unused
+  login: optional
+  secure: optional
 - url: /register
   script: unused
   login: optional

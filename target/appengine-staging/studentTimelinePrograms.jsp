@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Opportunities</title>
+    <title>Learning Opportunities</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -13,22 +13,23 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-light navbar-right">
-
-        <a role="button" class="btn btn-outline-primary my-2 my-sm-2" href="loginPage.jsp" style="margin-left:1400px;">Logout</a>
-
-    </nav>
+        <nav class="navbar navbar-light bg-light justify-content-between">
+                <a class="nav-link" href = "http://creddle.io/">Don't Have a Resume Yet? Get One Now!</a>
+                <a role="button" class="btn btn-outline-primary my-2 my-sm-2" href="loginPage.jsp">Logout</a>
+              </nav>
 
     <div class="limiter">
         <div class="container-login">
 
             <div class="jumbotron">
-                <div class="" style="margin-left: 500px;margin-top: 10px;">
-                    <a role="button" class="btn btn-primary btn-lg" href="https://iworks.appspot.com/programs">Learning Opportunities</a>
-                    <a role="button" class="btn btn-secondary btn-lg" href="https://iworks.appspot.com/jobs">Jobs / Internships</a>
-                    <br>
-                    <br>
-                    <br>
+                <div class="row ">
+                        <div class="col text-center" style="margin-top: 10px;">
+                                <a role="button" id = "opp" class="btn btn-primary btn-lg" href="https://iworks.appspot.com/programs">Learning Opportunities</a>
+                                <a role="button" id = "intern" class="btn btn-secondary btn-lg" href="https://iworks.appspot.com/jobs">Jobs / Internships</a>
+                                <br>
+                                <br>
+                                <br>
+                        </div>
                 </div>
 								
                 <div class="row ">
@@ -60,10 +61,25 @@
         </div>
     </div>
 
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script> 
     <!-- <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://www.google.com/jsapi"></script>
-
+    <script>
+            var Opportunities = "btn btn-primary btn-lg";// document.getElementById("opp").className;
+            var Internships = "btn btn-secondary btn-lg";// document.getElementById("id").className;
+            
+            if (document.title === "Learning Opportunities")
+            {
+                document.getElementById("opp").className = Opportunities;
+                document.getElementById("intern").className = Internships;
+            }
+            else
+            {
+                document.getElementById("opp").className = Internships;
+                document.getElementById("intern").className = Opportunities;
+            }
+    
+        </script>
 </body>
 
 </html>
