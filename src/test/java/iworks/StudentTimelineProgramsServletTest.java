@@ -54,10 +54,10 @@ public class StudentTimelineProgramsServletTest {
 
   @Test
   public void doGetWritesResponse() throws Exception {
-    // servletUnderTest.doGet(mockRequest, mockResponse);
+    servletUnderTest.doGet(mockRequest, mockResponse);
 
-    // assertThat(responseWriter.toString())
-        // .named("StudentTimelineProgramsServlet response")
-        // .contains("Programs fetched successfully!");
+    assertThat(responseWriter.toString())
+        .named("StudentTimelineProgramsServlet response")
+        .contains("Programs fetched successfully!");
   }
 }
