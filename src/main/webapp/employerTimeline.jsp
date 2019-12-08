@@ -27,7 +27,7 @@
 
                 <form method="POST" action="/post">
                     <div class="form-group">
-                        <label for="Listing Title"> Title </label>
+                        <label for="Listing Title"> Name of Opportunity </label>
                         <input type="text" class="form-control" name="title" id="title" aria-describedby="" placeholder="">
                     </div>
                     <div class="form-group">
