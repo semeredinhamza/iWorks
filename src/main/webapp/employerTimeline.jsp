@@ -21,7 +21,7 @@
             <div class="jumbotron">
                 <div class="">
                     <br>
-                    <h1> New Posting </h1>
+                    <h1> New Opportunity Posting </h1>
                     <br>
                 </div>
 
