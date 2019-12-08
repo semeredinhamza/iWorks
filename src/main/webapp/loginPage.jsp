@@ -22,12 +22,12 @@
 
                 <form method="POST" action="/login">
                     <div class="form-group">
-                        <label for="emailInput"> Email address </label>
-                        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="ex: johnW@iworks.com" required="required">
+                        <label for="emailInput"></label>
+                        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="Please enter your email" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="Password Input" > Password </label>
-                        <input type="password" class="form-control" name="passInput" id="passInput" placeholder="Password" required="required">
+                        <label for="Password Input" ></label>
+                        <input type="password" class="form-control" name="passInput" id="passInput" placeholder="Please enter your password" required="required">
                     </div>
 
                     <div class="">
