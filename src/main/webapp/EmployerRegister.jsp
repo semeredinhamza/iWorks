@@ -22,7 +22,8 @@
                     <br>
                     <br>
                     <br>
-                    <h1>Employer Sign Up</h1>
+                    <h2>Greeting Employer,</h2>
+                    <h5>iWorks is pleased to have you! Sign up below:</h5>
                     <br>
                     <br>
                 </div>
