@@ -21,7 +21,11 @@
                     <a role="button" class="btn btn-primary btn-lg" href="studentSignUp.jsp">Student Sign Up</a>
                     <a role="button" class="btn btn-secondary btn-lg" href="EmployerRegister.jsp">Employer Sign Up</a>
                     <br>
-                    <h1>Student Sign Up</h1>
+                    <br>
+                    <br>
+                    <h2>Greetings Studemt,</h2>
+                    <h5>iWorks is pleased to have you! Sign up below:</h5>
+                    <br>
                     <br>
                 </div>
 
