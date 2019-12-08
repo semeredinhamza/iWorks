@@ -21,7 +21,16 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Unit tests for {@link StudentTimelineJobsServlet}.
- */
+ Code Coverage of Tests
+We aim to have 100% code coverage of tests. In addition to the test cases mentioned above, we will be creating test cases as needed to ensure 100% code coverage. We cannot provide a complete list of test cases and make a detailed analysis of their code coverage; however, our goal is to achieve 100% code coverage by making test cases on a need basis.
+
+Integration Testing Strategy
+We are pursuing "big bang" integration testing strategy. In this approach, all the parts/modules are integrated and tested at one time. This test is done once the whole system is ready for integration testing.
+An advantage of a "big bang" integration testing approach is everything is integrated and tested at one time. On the other hand, its disadvantage is that it is hard to identify points of failure.
+
+Non-functional Requirements and User Interface Requirements Testing
+Our plan is to test to what extent we have met our non-functional requirements and user interface requirements by using the 1-5 rating scale. We will designate a couple of our team members to conduct the tests manually.
+*/
 @RunWith(JUnit4.class)
 public class StudentTimelineJobsServletTest {
   private static final String FAKE_URL = "fake.fk/hello";
