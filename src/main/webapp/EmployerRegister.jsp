@@ -22,7 +22,7 @@
                     <br>
                     <br>
                     <br>
-                    <h2>Greeting Employer,</h2>
+                    <h2>Greetings Employer,</h2>
                     <h5>iWorks is pleased to have you! Sign up below:</h5>
                     <br>
                     <br>
